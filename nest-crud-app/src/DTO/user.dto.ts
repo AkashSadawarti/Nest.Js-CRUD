@@ -13,7 +13,7 @@ export class UserDto {
     @IsEmail()
     email : string;
   
-    // @IsEmpty()
-    // token : string
+    @IsString()
+    password : string
 
 }
