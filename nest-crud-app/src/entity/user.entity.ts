@@ -25,4 +25,7 @@ export class User {
     default: '',
   })
   email: string;
+
+  @Column()
+  password : string;
 }
