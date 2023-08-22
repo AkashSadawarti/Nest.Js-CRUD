@@ -28,6 +28,11 @@ export class UserService {
         return this.userRepository.findOne({ where: { id } });
     }
 
+    // for login
+    getUserByEmail(email: string) {
+        return this.userRepository.findOne({ where: { email } });
+    }
+
     //  with simple body 
     // createUser(body: any) {
     //     // console.log(req.body);
